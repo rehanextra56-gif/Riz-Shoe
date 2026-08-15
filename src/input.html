@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RIZ — Premium Footwear</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        float: 'float 4s ease-in-out infinite',
+                        marquee: 'marquee 18s linear infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': {
+                                transform: 'translateY(0)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-15px)'
+                            }
+                        },
+                        marquee: {
+                            '0%': {
+                                transform: 'translateX(0)'
+                            },
+                            '100%': {
+                                transform: 'translateX(-100%)'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(15px);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto px-5 lg:px-8 py-4">
+
+            <div class="glass rounded-full px-5 py-3 flex items-center justify-between shadow-lg">
+
+                <!-- LOGO -->
+                <a href="#" class="text-2xl font-black tracking-tighter">
+                    RIZ<span class="text-neutral-400">.</span>
+                </a>
+
+                <!-- DESKTOP LINKS -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+
+                    <a href="#home" class="hover:text-neutral-500 transition">
+                        Home
+                    </a>
+
+                    <a href="#shop" class="hover:text-neutral-500 transition">
+                        Shop
+                    </a>
+
+                    <a href="#new" class="hover:text-neutral-500 transition">
+                        New Arrivals
+                    </a>
+
+                    <a href="#about" class="hover:text-neutral-500 transition">
+                        About
+                    </a>
+
+                </div>
+
+                <!-- NAV ICONS -->
+                <div class="flex items-center gap-3">
+
+                    <button class="hidden sm:block hover:bg-black hover:text-white rounded-full p-2.5 transition">
+                        🔍
+                    </button>
+
+                    <button class="hover:bg-black hover:text-white rounded-full p-2.5 transition">
+                        ♡
+                    </button>
+
+                    <button class="relative hover:bg-black hover:text-white rounded-full p-2.5 transition">
+                        🛒
+                        <span
+                            class="absolute -top-1 -right-1 bg-black text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center">
+                            2
+                        </span>
+                    </button>
+
+                    <button class="md:hidden text-xl">
+                        ☰
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home"
+        class="min-h-screen bg-neutral-100 flex items-center overflow-hidden relative pt-28">
+
+        <!-- BACKGROUND TEXT -->
+        <div
+            class="absolute text-[25vw] font-black text-neutral-200 select-none pointer-events-none left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            RIZ
+        </div>
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8 w-full relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+                <!-- HERO TEXT -->
+                <div>
+
+                    <p class="uppercase tracking-[0.35em] text-xs font-bold text-neutral-500 mb-5">
+                        New Season • 2026
+                    </p>
+
+                    <h1
+                        class="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85]">
+                        WALK<br>
+                        <span class="text-neutral-400">YOUR</span><br>
+                        WAY.
+                    </h1>
+
+                    <p class="mt-7 max-w-md text-neutral-600 leading-relaxed">
+                        Premium footwear designed for people who
+                        don't follow the crowd. Step into comfort,
+                        confidence and style.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a href="#shop"
+                            class="group bg-black text-white px-7 py-4 rounded-full font-semibold inline-flex items-center gap-3 hover:scale-105 transition">
+                            Shop Collection
+                            <span class="group-hover:translate-x-1 transition">
+                                →
+                            </span>
+                        </a>
+
+                        <a href="#new"
+                            class="px-7 py-4 rounded-full border border-black font-semibold hover:bg-black hover:text-white transition">
+                            Explore
+                        </a>
+
+                    </div>
+
+                    <div class="flex gap-8 mt-10">
+
+                        <div>
+                            <p class="text-2xl font-black">20K+</p>
+                            <p class="text-xs text-neutral-500">Happy Customers</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-black">50+</p>
+                            <p class="text-xs text-neutral-500">Shoe Styles</p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-black">4.9</p>
+                            <p class="text-xs text-neutral-500">Customer Rating</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO SHOE -->
+                <div class="relative flex justify-center">
+
+                    <div
+                        class="absolute w-[350px] h-[350px] sm:w-[480px] sm:h-[480px] rounded-full bg-neutral-200">
+                    </div>
+
+                    <img
+                        class="relative z-10 w-full max-w-xl object-contain animate-float drop-shadow-2xl"
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=90"
+                        alt="Premium red sneaker">
+
+                    <div
+                        class="absolute bottom-5 right-5 sm:right-10 bg-white/90 backdrop-blur-md rounded-2xl px-5 py-4 shadow-xl z-20">
+                        <p class="text-xs text-neutral-500">
+                            Featured
+                        </p>
+                        <p class="font-bold">
+                            RIZ Runner X
+                        </p>
+                        <p class="font-black mt-1">
+                            $129
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="bg-black text-white py-4 overflow-hidden">
+
+        <div class="flex whitespace-nowrap animate-marquee">
+
+            <div class="flex items-center gap-12 text-sm font-bold tracking-[0.25em] uppercase">
+                <span>Free Shipping</span>
+                <span>✦</span>
+                <span>Premium Quality</span>
+                <span>✦</span>
+                <span>Easy Returns</span>
+                <span>✦</span>
+                <span>New Collection</span>
+                <span>✦</span>
+                <span>Free Shipping</span>
+                <span>✦</span>
+                <span>Premium Quality</span>
+                <span>✦</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SHOP -->
+    <section id="shop" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <!-- HEADING -->
+            <div class="flex flex-col md:flex-row justify-between md:items-end gap-5 mb-12">
+
+                <div>
+                    <p class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400">
+                        Our Collection
+                    </p>
+
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter mt-2">
+                        Best Sellers
+                    </h2>
+                </div>
+
+                <a href="#"
+                    class="font-semibold border-b border-black pb-1 w-fit">
+                    View All Products →
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+
+                <!-- PRODUCT 1 -->
+                <div class="group">
+
+                    <div
+                        class="relative bg-neutral-100 rounded-3xl overflow-hidden aspect-square">
+
+                        <span
+                            class="absolute top-4 left-4 bg-black text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">
+                            BEST SELLER
+                        </span>
+
+                        <button
+                            class="absolute top-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-black hover:text-white transition">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="RIZ Runner">
+
+                        <button
+                            class="absolute bottom-4 left-4 right-4 bg-black text-white py-3 rounded-full font-semibold translate-y-16 group-hover:translate-y-0 transition duration-500">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+
+                        <div>
+                            <h3 class="font-bold">
+                                RIZ Runner X
+                            </h3>
+                            <p class="text-sm text-neutral-500">
+                                Sport Sneakers
+                            </p>
+                        </div>
+
+                        <p class="font-bold">
+                            $129
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+                <div class="group">
+
+                    <div
+                        class="relative bg-neutral-100 rounded-3xl overflow-hidden aspect-square">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white text-black text-xs font-bold px-3 py-1.5 rounded-full z-10">
+                            NEW
+                        </span>
+
+                        <button
+                            class="absolute top-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-black hover:text-white transition">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=700&q=85"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="RIZ Street">
+
+                        <button
+                            class="absolute bottom-4 left-4 right-4 bg-black text-white py-3 rounded-full font-semibold translate-y-16 group-hover:translate-y-0 transition duration-500">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+
+                        <div>
+                            <h3 class="font-bold">
+                                RIZ Street
+                            </h3>
+                            <p class="text-sm text-neutral-500">
+                                Lifestyle Sneakers
+                            </p>
+                        </div>
+
+                        <p class="font-bold">
+                            $115
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+                <div class="group">
+
+                    <div
+                        class="relative bg-neutral-100 rounded-3xl overflow-hidden aspect-square">
+
+                        <span
+                            class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">
+                            SALE
+                        </span>
+
+                        <button
+                            class="absolute top-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-black hover:text-white transition">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="RIZ Classic">
+
+                        <button
+                            class="absolute bottom-4 left-4 right-4 bg-black text-white py-3 rounded-full font-semibold translate-y-16 group-hover:translate-y-0 transition duration-500">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+
+                        <div>
+                            <h3 class="font-bold">
+                                RIZ Classic
+                            </h3>
+                            <p class="text-sm text-neutral-500">
+                                Casual Sneakers
+                            </p>
+                        </div>
+
+                        <div class="text-right">
+                            <p class="font-bold">$89</p>
+                            <p class="text-xs text-neutral-400 line-through">
+                                $119
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+                <div class="group">
+
+                    <div
+                        class="relative bg-neutral-100 rounded-3xl overflow-hidden aspect-square">
+
+                        <button
+                            class="absolute top-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-black hover:text-white transition">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=85"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="RIZ Air">
+
+                        <button
+                            class="absolute bottom-4 left-4 right-4 bg-black text-white py-3 rounded-full font-semibold translate-y-16 group-hover:translate-y-0 transition duration-500">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+
+                        <div>
+                            <h3 class="font-bold">
+                                RIZ Air
+                            </h3>
+                            <p class="text-sm text-neutral-500">
+                                Performance
+                            </p>
+                        </div>
+
+                        <p class="font-bold">
+                            $149
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURE BANNER -->
+    <section id="new" class="py-10">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div
+                class="rounded-[2rem] bg-neutral-100 overflow-hidden grid lg:grid-cols-2 min-h-[550px]">
+
+                <div class="flex items-center p-10 sm:p-16">
+
+                    <div>
+
+                        <p class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400">
+                            RIZ 2026
+                        </p>
+
+                        <h2
+                            class="text-5xl sm:text-6xl font-black tracking-tighter leading-none mt-4">
+                            BUILT<br>
+                            FOR<br>
+                            <span class="text-neutral-400">
+                                EVERY MOVE.
+                            </span>
+                        </h2>
+
+                        <p class="text-neutral-600 max-w-md mt-6 leading-relaxed">
+                            From morning runs to late-night adventures,
+                            RIZ footwear is made to move with you.
+                        </p>
+
+                        <a href="#shop"
+                            class="inline-block mt-8 bg-black text-white px-7 py-4 rounded-full font-semibold hover:scale-105 transition">
+                            Shop New Arrivals →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="min-h-[400px]">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=90"
+                        class="w-full h-full object-cover"
+                        alt="RIZ shoes">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="py-24">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="text-center mb-12">
+
+                <p class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400">
+                    Find Your Style
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mt-2">
+                    Shop By Category
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-5">
+
+                <a href="#"
+                    class="relative h-[420px] rounded-3xl overflow-hidden group">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=85"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                        alt="Running shoes">
+
+                    <div class="absolute inset-0 bg-black/30"></div>
+
+                    <div class="absolute bottom-7 left-7 text-white">
+
+                        <p class="text-sm">
+                            12 Styles
+                        </p>
+
+                        <h3 class="text-3xl font-black">
+                            Running
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <a href="#"
+                    class="relative h-[420px] rounded-3xl overflow-hidden group">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494496195158-c3becb4f2475?auto=format&fit=crop&w=800&q=85"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                        alt="Lifestyle shoes">
+
+                    <div class="absolute inset-0 bg-black/30"></div>
+
+                    <div class="absolute bottom-7 left-7 text-white">
+
+                        <p class="text-sm">
+                            18 Styles
+                        </p>
+
+                        <h3 class="text-3xl font-black">
+                            Lifestyle
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <a href="#"
+                    class="relative h-[420px] rounded-3xl overflow-hidden group">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=85"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                        alt="Classic shoes">
+
+                    <div class="absolute inset-0 bg-black/30"></div>
+
+                    <div class="absolute bottom-7 left-7 text-white">
+
+                        <p class="text-sm">
+                            15 Styles
+                        </p>
+
+                        <h3 class="text-3xl font-black">
+                            Classics
+                        </h3>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-black text-white py-24">
+
+        <div class="max-w-5xl mx-auto px-5 text-center">
+
+            <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 font-bold">
+                The RIZ Philosophy
+            </p>
+
+            <h2
+                class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mt-5 leading-tight">
+                WE DON'T MAKE<br>
+                SHOES. WE MAKE<br>
+                <span class="text-neutral-500">
+                    STATEMENTS.
+                </span>
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-neutral-400 mt-8 leading-relaxed">
+                RIZ was created for those who want more from their
+                everyday footwear. Better design. Better comfort.
+                Better energy.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="py-24">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="mb-12">
+
+                <p class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400">
+                    Customer Love
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mt-2">
+                    What People Say
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-5">
+
+                <div class="bg-neutral-100 rounded-3xl p-7">
+
+                    <div class="text-xl mb-5">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-neutral-700 leading-relaxed">
+                        "The comfort is insane. I've been wearing
+                        my RIZ sneakers almost every day."
+                    </p>
+
+                    <div class="mt-7 font-bold">
+                        Ahmed K.
+                    </div>
+
+                    <p class="text-sm text-neutral-500">
+                        Verified Customer
+                    </p>
+
+                </div>
+
+
+                <div class="bg-neutral-100 rounded-3xl p-7">
+
+                    <div class="text-xl mb-5">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-neutral-700 leading-relaxed">
+                        "Finally a sneaker that looks premium
+                        without being ridiculously expensive."
+                    </p>
+
+                    <div class="mt-7 font-bold">
+                        Sarah M.
+                    </div>
+
+                    <p class="text-sm text-neutral-500">
+                        Verified Customer
+                    </p>
+
+                </div>
+
+
+                <div class="bg-neutral-100 rounded-3xl p-7">
+
+                    <div class="text-xl mb-5">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-neutral-700 leading-relaxed">
+                        "The design is clean, the quality is
+                        excellent and shipping was super fast."
+                    </p>
+
+                    <div class="mt-7 font-bold">
+                        Hamza R.
+                    </div>
+
+                    <p class="text-sm text-neutral-500">
+                        Verified Customer
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="pb-24">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div
+                class="bg-neutral-100 rounded-[2rem] px-6 py-16 md:px-16 text-center">
+
+                <p class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400">
+                    Stay In The Loop
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mt-3">
+                    GET 10% OFF
+                </h2>
+
+                <p class="text-neutral-500 mt-4">
+                    Join the RIZ community and get exclusive drops,
+                    offers and updates.
+                </p>
+
+                <div
+                    class="max-w-lg mx-auto mt-8 flex flex-col sm:flex-row gap-3">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        class="flex-1 px-6 py-4 rounded-full border border-neutral-300 outline-none focus:border-black">
+
+                    <button
+                        class="bg-black text-white px-7 py-4 rounded-full font-semibold hover:scale-105 transition">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                <!-- BRAND -->
+                <div>
+
+                    <h2 class="text-4xl font-black tracking-tighter">
+                        RIZ.
+                    </h2>
+
+                    <p class="text-neutral-500 mt-5 max-w-xs leading-relaxed">
+                        Premium footwear for people who
+                        choose their own path.
+                    </p>
+
+                </div>
+
+
+                <!-- SHOP -->
+                <div>
+
+                    <h3 class="font-bold mb-5">
+                        Shop
+                    </h3>
+
+                    <div class="space-y-3 text-neutral-500 text-sm">
+
+                        <a href="#" class="block hover:text-white transition">
+                            New Arrivals
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            Sneakers
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            Running
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            Sale
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HELP -->
+                <div>
+
+                    <h3 class="font-bold mb-5">
+                        Help
+                    </h3>
+
+                    <div class="space-y-3 text-neutral-500 text-sm">
+
+                        <a href="#" class="block hover:text-white transition">
+                            Contact
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            Shipping
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            Returns
+                        </a>
+
+                        <a href="#" class="block hover:text-white transition">
+                            FAQ
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+                <div>
+
+                    <h3 class="font-bold mb-5">
+                        Follow RIZ
+                    </h3>
+
+                    <div class="flex gap-3">
+
+                        <a href="#"
+                            class="w-11 h-11 border border-neutral-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            IG
+                        </a>
+
+                        <a href="#"
+                            class="w-11 h-11 border border-neutral-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            TK
+                        </a>
+
+                        <a href="#"
+                            class="w-11 h-11 border border-neutral-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            X
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="border-t border-neutral-800 mt-14 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs text-neutral-600">
+
+                <p>
+                    © 2026 RIZ Shoe Shop. All rights reserved.
+                </p>
+
+                <div class="flex gap-5">
+
+                    <a href="#" class="hover:text-white">
+                        Privacy
+                    </a>
+
+                    <a href="#" class="hover:text-white">
+                        Terms
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
